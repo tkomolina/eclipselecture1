@@ -1,0 +1,91 @@
+class Factory {
+	private String name;
+	private String location;
+	private int workerAmount;
+	//private boolean isBankrupt = false;
+
+	public Factory(String name, String location, int workerAmount) {
+		this.name = name;
+		this.location = location;
+		this.workerAmount = workerAmount;
+		// this.isBankrupt = isBankrupt;
+		System.out.println("The The factory class is created ");
+	}
+}
+
+class Employee {
+	private String name;
+	private String work;
+	private int salary;
+	private int totalMoney;
+	private boolean leftJob = false;
+
+	public Employee(String name, String work, int salary, int totalMoney) {
+		this.name = name;
+		this.work = work;
+		this.salary = salary;
+		this.totalMoney = totalMoney;
+	}
+	
+	public Employee(String name, String work, int salary) {
+		this.name = name;
+		this.work = work;
+		this.salary = salary;
+	}
+	
+	public boolean leftJob(){
+		return leftJob;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public String getWork() {
+		return work;
+	}
+	public void setTotalMoney() {
+		this.totalMoney = totalMoney;
+	}
+	public int getTotalMoney() {
+		return totalMoney;
+	}
+	
+	void recieveSalary(int salary) {
+		if (!this.leftJob){
+			this.totalMoney = totalMoney + salary;
+			System.out.println("Worker " + name +  " got salary " + salary ); 
+		}else{
+			this.salary = 0;
+			System.out.println("Worker has left job and has salary: " + this.salary);
+		
+	}
+	}
+	
+	public String printStatus() {
+		return "Worker " + this.name + " total recieved " + this.totalMoney;
+	
+	}
+}
+
+public class FactoryTaskConstructor {
+	public static void main(String[] args) {
+		
+		Employee worker1 = new Employee("John", "Dzintars", 200);
+		Employee worker2 = new Employee("Anna", "Gan bei", 350);
+		System.out.println(worker1.printStatus());
+		System.out.println(worker2.printStatus());
+		worker2.leftJob();
+		System.out.println(worker2.printStatus());
+		
+		
+		
+		//worker1.recieveSalary(150);
+		
+	}
+}
