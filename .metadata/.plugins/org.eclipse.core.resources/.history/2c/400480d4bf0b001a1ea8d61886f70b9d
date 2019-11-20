@@ -172,14 +172,14 @@ public class Practice {
 		System.out.println("Enter " + numbers + "thy:");
 		Scanner scanner = new Scanner(System.in);
 		int element;
-		for (int i = 0; i < numbers; i++) {
-			element = scanner.nextInt();
-			myArrays[i] = element;
+		for(int i=0;i<numbers;i++){
+			element=scanner.nextInt();
+			myArrays[i]=element;
 		}
-		scanner.close();
-
+		
+		
 		// TODO implement method, according to requirements of Task 8
-		return myArrays;
+		return null;
 	}
 
 }

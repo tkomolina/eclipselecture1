@@ -179,7 +179,7 @@ public class Practice {
 		scanner.close();
 
 		// TODO implement method, according to requirements of Task 8
-		return myArrays;
+		return null;
 	}
 
 }
