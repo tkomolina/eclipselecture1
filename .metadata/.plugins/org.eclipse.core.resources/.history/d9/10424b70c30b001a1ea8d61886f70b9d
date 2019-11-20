@@ -3,20 +3,18 @@ package com.accenture.lecture13;
 import java.util.Scanner;
 
 public class Practice {
-	static Scanner scanner = new Scanner(System.in);
 
 	static void sayHi() {
 		System.out.println("Hello world");
 	}
 
 	public static void main(String[] args) {
-
 		int[] myArrays = new int[10];
 		for (int i = 0; i < myArrays.length; i++) {
 			myArrays[i] = i * 2;
 
 		}
-		myArrays[1] = 1;
+		myArrays[1]=1;
 
 		// Task 0 - move "Hello world" output into method sayHi() and call it
 		// twice
@@ -84,7 +82,7 @@ public class Practice {
 		// 0 element is 3
 		// 1 element is 6
 		// 2 element is 7
-		int[] myIntegers = getArrayDefinedByUser(3, scanner);
+		int[] myIntegers = getArrayDefinedByUser(3);
 		printArray(myIntegers);
 
 		// Task 6 - make sure getAvarege() and getAvaregeDouble() methods uses
@@ -113,8 +111,6 @@ public class Practice {
 		// 2 element is 1
 		// 3 element is 12
 
-		arrayDefinedByUser(scanner);
-
 		// Task 8.1 - rewrite your program, that Scanner object would be
 		// initialized only once in your program
 		// * hint, think about making Scanner instance(object) as a class static
@@ -128,6 +124,7 @@ public class Practice {
 			System.out.println(index + " element is " + i);
 			index++;
 		}
+		// TODO should print out into console content of someArray
 	}
 
 	public static int getSum(int[] someArray) {
@@ -139,6 +136,8 @@ public class Practice {
 	}
 
 	public static int getAvarege(int[] someArray) {
+		// TODO implement method, that it will return average of all elements of
+		// array 'someArray'
 		int sum = getSum(someArray);
 		int average = sum / someArray.length;
 		return average;
@@ -156,28 +155,26 @@ public class Practice {
 	}
 
 	public static double getAvaregeDouble(int[] someArray) {
+
 		int sum = getSum(someArray);
 		double average = (double) sum / someArray.length;
 		return average;
+
 	}
 
-	public static int[] getArrayDefinedByUser(int numbers, Scanner scanner) {
+	public static int[] getArrayDefinedByUser(int numbers) {
 		int[] myArrays = new int[numbers];
 		System.out.println("Enter " + numbers + "thy:");
+		Scanner scanner = new Scanner(System.in);
 		int element;
 		for (int i = 0; i < numbers; i++) {
 			element = scanner.nextInt();
 			myArrays[i] = element;
 		}
+		scanner.close();
+
+		// TODO implement method, according to requirements of Task 8
 		return myArrays;
 	}
 
-	public static void arrayDefinedByUser(Scanner scanner) {
-
-		System.out.println("how big array do you want to create");
-		int size = scanner.nextInt();
-		int[] array = getArrayDefinedByUser(size, scanner);
-		printArray(array);
-
-	}
 }

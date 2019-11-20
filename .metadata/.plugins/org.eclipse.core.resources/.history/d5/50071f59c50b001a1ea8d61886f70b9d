@@ -3,13 +3,13 @@ package com.accenture.lecture13;
 import java.util.Scanner;
 
 public class Practice {
-	static Scanner scanner = new Scanner(System.in);
 
 	static void sayHi() {
 		System.out.println("Hello world");
 	}
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 
 		int[] myArrays = new int[10];
 		for (int i = 0; i < myArrays.length; i++) {
@@ -119,7 +119,7 @@ public class Practice {
 		// initialized only once in your program
 		// * hint, think about making Scanner instance(object) as a class static
 		// field and refer to it in your code
-
+		scanner.close();
 	}
 
 	public static void printArray(int[] someArray) {
@@ -128,6 +128,7 @@ public class Practice {
 			System.out.println(index + " element is " + i);
 			index++;
 		}
+		// TODO should print out into console content of someArray
 	}
 
 	public static int getSum(int[] someArray) {
@@ -139,6 +140,8 @@ public class Practice {
 	}
 
 	public static int getAvarege(int[] someArray) {
+		// TODO implement method, that it will return average of all elements of
+		// array 'someArray'
 		int sum = getSum(someArray);
 		int average = sum / someArray.length;
 		return average;
@@ -156,19 +159,25 @@ public class Practice {
 	}
 
 	public static double getAvaregeDouble(int[] someArray) {
+
 		int sum = getSum(someArray);
 		double average = (double) sum / someArray.length;
 		return average;
+
 	}
 
 	public static int[] getArrayDefinedByUser(int numbers, Scanner scanner) {
 		int[] myArrays = new int[numbers];
 		System.out.println("Enter " + numbers + "thy:");
+		// Scanner scanner = new Scanner(System.in);
 		int element;
 		for (int i = 0; i < numbers; i++) {
 			element = scanner.nextInt();
 			myArrays[i] = element;
 		}
+		// scanner.close();
+
+		// TODO implement method, according to requirements of Task 8
 		return myArrays;
 	}
 
@@ -176,8 +185,10 @@ public class Practice {
 
 		System.out.println("how big array do you want to create");
 		int size = scanner.nextInt();
+
 		int[] array = getArrayDefinedByUser(size, scanner);
 		printArray(array);
 
 	}
+
 }
