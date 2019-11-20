@@ -157,7 +157,7 @@ public class Practice {
 	public static double getAvaregeDouble(int[] someArray) {
 
 		int sum = getSum(someArray);
-		double average = (double) sum / someArray.length;
+		double average = sum / someArray.length;
 		return average;
 
 	}

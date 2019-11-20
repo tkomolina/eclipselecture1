@@ -14,7 +14,6 @@ public class Practice {
 			myArrays[i] = i * 2;
 
 		}
-		myArrays[1]=1;
 
 		// Task 0 - move "Hello world" output into method sayHi() and call it
 		// twice
@@ -132,6 +131,8 @@ public class Practice {
 		for (int i = 0; i < someArray.length; i++) {
 			sum = sum + someArray[i];
 		}
+		// TODO implement method, that it will return sum of all elements of
+		// passed in array 'someArray'
 		return sum;
 	}
 
@@ -157,7 +158,7 @@ public class Practice {
 	public static double getAvaregeDouble(int[] someArray) {
 
 		int sum = getSum(someArray);
-		double average = (double) sum / someArray.length;
+		double average = sum / someArray.length;
 		return average;
 
 	}
