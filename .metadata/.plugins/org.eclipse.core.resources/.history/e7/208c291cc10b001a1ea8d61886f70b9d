@@ -118,10 +118,8 @@ public class Practice {
 	}
 
 	public static void printArray(int[] someArray) {
-		int index = 0;
-		for (int i : someArray) {
-			System.out.println(index + " element is " + i);
-			index++;
+		for (int i = 0; i < someArray.length; i++) {
+			System.out.println(i + " element is " + someArray[i]);
 		}
 		// TODO should print out into console content of someArray
 	}
