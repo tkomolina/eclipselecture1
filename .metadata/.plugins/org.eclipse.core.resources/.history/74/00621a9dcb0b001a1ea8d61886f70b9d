@@ -1,0 +1,69 @@
+package com.accenture.lecture13;
+
+class ArrayOperations{
+	
+	int[] array;
+	
+	public ArrayOperations(){
+		//this();
+	}
+	
+	public ArrayOperations(int[] array){
+		this.array=array; 
+		System.out.println("Intance has been created");
+	}
+	
+	public void printArray() {
+		int index = 0;
+		for (int i : this.array) {
+			System.out.println(index + " element is " + i);
+			index++;
+		}
+	}
+	
+
+	public  int getSum() {
+		int sum = 0;
+		for (int i = 0; i < this.array.length; i++) {
+			sum = sum + array[i];
+		}
+		return sum;
+	}
+
+	/*public static int getAvarege(int[] someArray) {
+		int sum = getSum(someArray);
+		int average = sum / someArray.length;
+		return average;
+	}
+
+	public static int getMaxValue(int[] someArray) {
+		int max = someArray[0];
+		for (int i = 1; i < someArray.length; i++) {
+			if (someArray[i] > max) {
+				max = someArray[i];
+			}
+
+		}
+		return max;
+	}
+
+	public static double getAvaregeDouble(int[] someArray) {
+		int sum = getSum(someArray);
+		double average = (double) sum / someArray.length;
+		return average;
+	}*/
+}
+
+public class Practice2 {
+
+
+	public static void main(String[] args) {
+		
+		ArrayOperations array1 = new ArrayOperations(Practice.arrayDefinedByUser());
+		array1.printArray();
+		array1.getSum();
+		System.out.println("Sum is " + array1.getSum());
+
+	}
+
+}

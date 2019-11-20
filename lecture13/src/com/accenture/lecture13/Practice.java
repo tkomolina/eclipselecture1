@@ -124,8 +124,8 @@ public class Practice {
 
 	public static void printArray(int[] someArray) {
 		int index = 0;
-		for (int i : someArray) {
-			System.out.println(index + " element is " + i);
+		for (int value : someArray) {
+			System.out.println(index + " element is " + value);
 			index++;
 		}
 	}
@@ -172,12 +172,13 @@ public class Practice {
 		return myArrays;
 	}
 
-	public static void arrayDefinedByUser() {
+	public static int[] arrayDefinedByUser() {
 
 		System.out.println("how big array do you want to create");
 		int size = scanner.nextInt();
 		int[] array = getArrayDefinedByUser(size);
 		printArray(array);
+		return array;
 
 	}
 }

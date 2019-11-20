@@ -1,0 +1,35 @@
+package com.accenture.lecture13;
+
+class ArrayOperations{
+	
+	int[] array;
+	
+	public ArrayOperations(){
+		//this();
+	}
+	
+	public ArrayOperations(int[] array){
+		this.array=array; 
+		System.out.println("Intance has been created");
+	}
+	
+	public void printArray() {
+		int index = 0;
+		for (int i : this.array) {
+			System.out.println(index + " element is " + i);
+			index++;
+		}
+	}
+}
+
+public class Practice2 {
+
+
+	public static void main(String[] args) {
+		
+		ArrayOperations array1 = new ArrayOperations(Practice.arrayDefinedByUser());
+		array1.printArray();
+
+	}
+
+}
