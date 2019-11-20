@@ -1,0 +1,51 @@
+/*Create a class DrivingRule which has:
+
+Instance variables: name and description
+Static variable: country equals to Latvia
+2 constant max speed in city/outside
+Create few instance of DrivingRule
+DrivingRule should counts total amount of rules which we have created*/
+
+ class DrivingRule{
+	private final String ruleName;
+	String description;
+	private static String country = "Latvia";
+	private static final int MAX_SPEED_IN_CITY = 50;
+	private static final int MAX_SPEED_OUTSIDE_CITY = 90;
+	static int totalRuleAmount;
+	
+	public DrivingRule(String ruleName){
+		this(ruleName, null); //we reuse the second constructor. In place null we can set some default descr. "Default descr"
+		
+	}
+		
+	public DrivingRule(String ruleName, String description){
+		this.ruleName=ruleName;
+		System.out.println("The rule " + ruleName);
+		totalRuleAmount++;		
+	}
+	
+	/*public void RuleAmount (){
+		System.out.println(totalRuleAmount);	
+	}*/
+	
+}
+
+
+
+public class FinalStaticVariableTask {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		DrivingRule rule1 = new DrivingRule("Parking");
+		DrivingRule rule2 = new DrivingRule("ParkingII", "Parking on the brigde is prohibited");
+		
+		System.out.println(DrivingRule.totalRuleAmount);
+
+	}
+
+}

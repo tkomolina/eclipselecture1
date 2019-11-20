@@ -1,0 +1,23 @@
+
+class Point{
+		static int x;
+		static int y;
+		
+		void getCoordinates(int x,int y){
+			
+		}
+		/*
+		 String toString(){
+			return ;			
+		}*/
+
+public class AppPoint {
+	
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(x);
+
+	}
+
+}

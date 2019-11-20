@@ -38,6 +38,7 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
@@ -66,9 +67,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lecture9/src/EmployeeTaskConstructor.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="354" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FinalStaticVariableTask.java" partName="FinalStaticVariableTask.java" path="/home/student/workspace/lecture10/src/FinalStaticVariableTask.java" title="FinalStaticVariableTask.java" tooltip="lecture10/src/FinalStaticVariableTask.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FinalStaticVariableTask.java" partName="FinalStaticVariableTask.java" path="/home/student/workspace/lecture10/src/FinalStaticVariableTask.java" title="FinalStaticVariableTask.java" tooltip="lecture10/src/FinalStaticVariableTask.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lecture10/src/FinalStaticVariableTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="1013" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="803" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClassNew.java" partName="ClassNew.java" path="/home/student/workspace/githubtest/src/ClassNew.java" title="ClassNew.java" tooltip="githubtest/src/ClassNew.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/githubtest/src/ClassNew.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="214" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -112,10 +117,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -248,6 +249,7 @@
 <show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
 <show_view_action id="org.eclipse.pde.runtime.LogView"/>
 <show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_in_time id="org.eclipse.ui.navigator.ProjectExplorer" time="1573844753731"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
@@ -343,16 +345,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lecture9/src/TaskConstructor.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lecture9/src/EmployeeTaskConstructor.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lecture10/src/FinalStaticVariableTask.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/githubtest/src/ClassNew.java"/>
 </editors>
-<item historyLabel="FactoryTaskConstructor.java" index="0">
-<position/>
-</item>
-<item historyLabel="FactoryTaskConstructor.java" index="0">
-<position/>
-</item>
-<item historyLabel="FactoryTask.java" index="1">
-<position info="not_deleted" x="2137" y="0"/>
-</item>
 <item historyLabel="FactoryTaskConstructor.java" index="0">
 <position/>
 </item>
@@ -491,8 +485,17 @@
 <item historyLabel="FinalStaticVariableTask.java" index="4">
 <position info="not_deleted" x="499" y="0"/>
 </item>
-<item active="true" historyLabel="FinalStaticVariableTask.java" index="4">
+<item historyLabel="FinalStaticVariableTask.java" index="4">
 <position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="ClassNew.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ClassNew.java" index="5">
+<position info="not_deleted" x="160" y="0"/>
+</item>
+<item active="true" historyLabel="ClassNew.java" index="5">
+<position info="not_deleted" x="214" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -514,6 +517,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClassNew.java" tooltip="githubtest/src/ClassNew.java">
+<persistable path="/githubtest/src/ClassNew.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FinalStaticVariableTask.java" tooltip="lecture10/src/FinalStaticVariableTask.java">
 <persistable path="/lecture10/src/FinalStaticVariableTask.java"/>
 </file>
@@ -555,9 +561,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Exercise2.java" tooltip="lecture6/src/Exercise2.java">
 <persistable path="/lecture6/src/Exercise2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TaskArrayMethod.java" tooltip="lecture8/src/TaskArrayMethod.java">
-<persistable path="/lecture8/src/TaskArrayMethod.java"/>
 </file>
 </mruList>
 </workbench>
