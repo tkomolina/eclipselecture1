@@ -135,12 +135,7 @@ public class Practice {
 	public static int getAvarege(int[] someArray) {
 		// TODO implement method, that it will return average of all elements of
 		// array 'someArray'
-		int sum = 0;
-		for (int i = 0; i < someArray.length; i++) {
-			sum = sum + someArray[i];
-		}
-		int average = sum / someArray.length;
-		return average;
+		return 0;
 	}
 
 	public static int[] getArrayDefinedByUser(int numbers) {
