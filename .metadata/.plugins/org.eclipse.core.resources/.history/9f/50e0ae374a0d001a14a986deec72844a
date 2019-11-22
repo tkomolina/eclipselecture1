@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+public class Starter {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] array = new int[3];
+		
+		System.out.println("Array length: " + array.length);
+		
+		array[0]=1;
+		array[4]=30;
+		System.out.println(Arrays.toString(array));
+		
+		ArrayList<String> arrayList = new ArrayList<>();
+		arrayList.add("Volvo");
+		arrayList.add("Lada");
+		arrayList.add("Tesla");
+		
+		System.out.println("ArrayList size is: " + arrayList.size());
+
+	}
+
+}

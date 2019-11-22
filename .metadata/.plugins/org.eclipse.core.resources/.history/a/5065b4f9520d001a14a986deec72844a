@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Starter {
+
+	
+
+	public static void main(String[] args) {
+
+		String goToArray = "Mazda";
+		int[] array = new int[3];
+		System.out.println("Array length: " + array.length);
+		array[0] = 1;
+		System.out.println(Arrays.toString(array));
+
+		ArrayList<String> arrayList = new ArrayList<>();
+		arrayList.add("Volvo");
+		arrayList.add("Lada");
+		arrayList.add("Tesla");
+		arrayList.add("Skoda");
+		arrayList.add("Bmw");
+		arrayList.add("VW");
+		arrayList.add("Toyota");
+		arrayList.add("Scania");
+		arrayList.add("Fiat");
+		arrayList.add("Honda");
+		loopArraysToString(arrayList);
+
+		arrayList.set(1, goToArray); // this method will replace first index of
+										// an array with variable goToArray
+
+		System.out.println("ArrayList size is: " + arrayList.size());
+
+		arrayList.remove(2); // this method removes the value of the first index in array
+		loopArraysToString(arrayList); // print arrayList after remove
+		System.out.println("ArrayList size is: " + arrayList.size());
+
+		String elementZero = arrayList.get(0);
+		System.out.println("Element zero is:  " + elementZero);
+
+		ArrayList<Double> arrayTest = new ArrayList<>();
+		// in order to get the arraylist of int values, we should use class Integer in diamond brackets
+		//We can use also classes Double, Character, Boolean..
+		arrayTest.add(234.2);
+		loopArraysDoubleToString(arrayTest);
+		
+		
+		User user = new User("Janis", 3333);
+		System.out.println(user.getName());
+		
+
+	}
+	
+	public static void loopArraysToString(ArrayList<String> array) {
+		for (int i = 0; i < array.size(); i++) {
+			System.out.println(" Index: " + i + " " + array.get(i)); // this method prints out an array
+		}
+	}
+	
+	public static void loopArraysDoubleToString(ArrayList<Double> array) {
+		for (int i = 0; i < array.size(); i++) {
+			System.out.println(" Index: " + i + " " + array.get(i)); // this method prints out an array
+		}
+	}
+
+}
